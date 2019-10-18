@@ -1,68 +1,17 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Choose your enemies!
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## MVP Description
 
-### `npm start`
+Choose your enemies is going to be an app that comes back with monsters and foes to help you choose your enemies in your Dungeons & Dragons adventure! I will be using an api hosted on a Django website. The link is https://api.open5e.com/monsters/
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The user will input their level, or the monsters level. If they are low level, they will come back with appropriate monsters. If they feel for a TOUGH adventure, they can search for monsters leagues above their level. On home, all monsters will come flowing. Once they click on a monster, the monsters profile will appear. The info will range from the monsters bio, trivial facts, and their fight statistics.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
+The site will have the components Header, Footer, Main, Input Field, Monster List and Monster Profile.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Stretch Goals
+I would like to stylize the website to make the players feel at home. One functionality I definitely want to add is a neon glow CSS feature. If they want a low level enemy, the header and surrounding areas will glow a faint green, giving you the confidence and go ahead that your hero can fight and win! Be careful not to put an army together down the line. However, if the monster is extremely high level, the header will glow a strong ominous red, warning you that you will get messed up. Have a good plan with how you will kill this being.
