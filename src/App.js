@@ -1,6 +1,12 @@
 import React from 'react';
 import './App.css';
-import axios from 'axios'
+import { Link, Route } from 'react-router-dom'
+import Header from './components/Header';
+import Main from './components/Main';
+import Profile from './components/Profile';
+import List from './components/List';
+import Footer from './components/Footer';
+import { list } from './services/api-helper';
 
 
 class App extends React.Component {
@@ -8,36 +14,28 @@ class App extends React.Component {
     super(props);
     this.state = {
       monsters: [],
-      nextPage: ""
+      profiles: ''
     }
   }
 
-  async componentDidMount() {
-    const response = await axios.get('https://api.open5e.com/monsters/')
-    let monsters = response.data.results
-    let nextPage = response.data.next
-    console.log(monsters)
+  componentDidMount = async () => {
+    let monsters = await list()
     this.setState({
-      monsters,
-      nextPage
+      monsters
     })
   }
 
   render() {
     return (
       <div className="App">
-        {this.state.monsters.map(monster => (
-          <>
-            {monster.img_main && (
-              <>
-              <h3>{monster.name}</h3>
-                <img src={monster.img_main} />
-                </>
-            )}
-          </>
-        ))}
+        <Header />
+        {this.state.monsters &&
+          <Main list={this.state.monsters} />
+        }
+        <Footer />
       </div>
     );
+
   }
 }
 
