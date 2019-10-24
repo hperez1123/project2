@@ -5,10 +5,9 @@ import Profile from './Profile'
 
 function Main(props) {
   return (
-    <div>
+    <div className="main">
       <Route exact path='/' render={() => <List list={props.list} />} />
-      <p>main</p>
-      <Route path='/:index' render={(props) => <Profile profile={props.match.params.index} />} />
+      <Route path='/:name' render={(props) => <Profile name={props.match.params.name} />} />
     </div>
   )
 }

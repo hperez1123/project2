@@ -1,16 +1,13 @@
 import axios from 'axios';
 
 export const list = async () => {
-  const response = await axios.get('http://www.dnd5eapi.co/api/monsters/')
+  const response = await axios.get("https://cors-anywhere.herokuapp.com/https://api.open5e.com/monsters/?limit=1100")
   const monsterList = response.data
-  // debugger;
   return monsterList
-
-  // return Object.keys(monsterList)
 }
 
-export const monster = async (index) => {
-  const response = await axios.get(`http://www.dnd5eapi.co/api/monsters/${index}/`)
+export const monsterProfile = async (name) => {
+  const response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.open5e.com/monsters/?name=${name}`)
   const profile = response.data
   return profile
 }

@@ -1,22 +1,200 @@
-.App {
-  text-align: center;
+body{
+  margin: 0px;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+header {
+  height: 140px;
+  width: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(121,9,9,1) 25%, rgba(117,15,17,1) 75%, rgba(0,0,0,1) 95%);
+  border: 3px solid	rgb(62,14,103);
+  border-radius: 10px; 
+  display:flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+header h1 {
+  color: white;
+  margin-right: 35px;
+}
+
+/* header input{
+  margin-left: 35px;
+} */
+
+header a button{
+  margin-left: 35px;
+  font-size: 20px;
+  height:50px;
+  width:100px;
+  border: black;
+  border-radius: 5%;
+  background-color: crimson;
+  animation: shadow-pulse 1s infinite;
+}
+
+@keyframes shadow-pulse{
+  0%{
+    box-shadow: 0 0 0 0px rgba(246,0,0,0.2);
+  }
+  100%{
+    box-shadow: 0 0 0 50px rgba(246, 4, 4, 0);
+  }
+}
+
+.main {
+  background-color: gray;
+}
+
+.list{
+  margin: 0px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.list h1{
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+@media only screen and (min-width: 600px){
+.list a{
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px black solid;
+}
+}
+
+.gifdiv{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.GIF{
+  height: 100%;
+  width: 100%;
+}
+
+.gifdiv2{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+background-size: cover;
+}
+
+.GIF2{
+height: 100%;
+width: 100%;
+background-size: cover;
+}
+
+
+.monster{
+  display: flex;
+}
+
+.monster img{
+  height: 100%;
+  width: 650px;
+}
+
+.texty{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer{
+  border: 3px solid	#4B0082;
+  background: rgb(117,15,17);
+background: linear-gradient(90deg, rgba(117,15,17,1) 30%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 50%, rgba(121,9,9,1) 70%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: crimson;
+  text-align: center;
+}
+
+.footer img{
+  border-radius: 25%;
+}
+
+/* For Galaxy Phones */
+@media only screen and (max-width: 360px) {
+  .header{
+    display: flex;
+  }
+
+  .header h1{
+    font-size: 15px;
+    color: firebrick;
+  }
+
+  .list {
+    margin-top: 0px;
+    display: inline-block;
+  }
+
+  .list a{
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .listee {
+    margin-top: 15px;
+    border: 1px solid black;
+  }
+
+  .monster{
+    display: inline-block;
+  }
+  .monster img {
+    width: 100%;
+  }
+}
+
+/* For Iphone X*/
+@media only screen and (max-width: 375px) {
+  .header{
+    display: flex;
+  }
+
+  .header h1{
+    font-size: 15px;
+    color: firebrick;
+  }
+
+  .list {
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .listee {
+    margin-top: 15px;
+    border: 1px solid black;
+  }
+
+  .list a{
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .monster{
+    display: inline-block;
+  }
+  .monster img {
+    width: 100%;
+  }
 }
